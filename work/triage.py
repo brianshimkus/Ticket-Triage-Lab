@@ -4,20 +4,26 @@ import os
 import time
 from pathlib import Path
 
-from dotenv import load_dotenv
-from openai import OpenAI
-from contracts import Ticket, Prediction
+from contracts import Prediction, Ticket
+from dotenv import load_dotenv  # pyright: ignore[reportMissingImports]
+from openai import OpenAI  # noqa: F401
 
 load_dotenv()
 
 
 def classify_rule(ticket):
-    # Implement this function in the matching tutorial lesson.
-    raise NotImplementedError("Complete classify_rule in the tutorial")
+    text = ticket.text.lower()
+    for category, words in [
+        ("billing", ["invoice", "refund", "charged"]),
+        ("technical", ["error", "api", "timeout"]),
+        ("account", ["login", "password", "locked out"]),
+    ]:
+        if any(word in text for word in words):
+            return Prediction(category=category, reason="Keyword rule matched.")
+    return Prediction(category="other", reason="No keyword rule matched.")
 
 
 def classify_live(ticket, client=None):
-    # Implement this function in the matching tutorial lesson.
     raise NotImplementedError("Complete classify_live in the tutorial")
 
 
