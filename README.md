@@ -4,6 +4,12 @@ One ticket. Four categories. Rules first, then one model call.
 
 ![Ticket Triage: a stack of tickets routed to Billing, Account, Technical, or Other](public/thumbnail.png)
 
+## Demo
+
+[Watch the three-minute demo](https://youtu.be/iQ04n4o2BHo). Keyword rules miss “You took my money twice.” One live model call returns billing.
+
+[Read the case study](https://www.brianshimkus.com/case-studies/ticket-triage).
+
 ## The customer problem
 
 A simulated support inbox receives a small stream of tickets. Someone reads each one and chooses a destination. Routing is inconsistent, and nothing records how often that first choice was right.
