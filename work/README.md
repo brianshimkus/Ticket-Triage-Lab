@@ -1,5 +1,12 @@
-# ticket-triage learning workspace
+# Ticket Triage
 
-This is intentionally incomplete. Follow the matching TUTORIAL.md or PDF.
-NotImplementedError marks the functions you will build.
-After completing the project, replace this README with your own case study.
+Keyword rules first, then one model call. The portfolio write-up is in the [repository README](../README.md).
+
+- [Demo video](https://youtu.be/iQ04n4o2BHo)
+- [Case study](https://www.brianshimkus.com/case-studies/ticket-triage)
+
+From this folder, with the virtual environment active:
+
+```bash
+streamlit run demo.py
+```
