@@ -17,3 +17,5 @@ Next experiment:
 ## Experiment log
 
 Date | Data split | Mode | Model | Change | Metric | Result | Interpretation
+
+2026-09-27 | ticket.json | live | gpt-4.1-mini | first live call | category | billing, 134 in / 21 out, 4442 ms | duplicate invoice routed to billing
